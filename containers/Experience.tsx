@@ -2,7 +2,7 @@ import React from 'react';
 import { experience } from '../portfolio';
 import { Container, Row } from 'reactstrap';
 import ExperienceCard from '../components/ExperienceCard';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 const Experience = () => {
   return (
@@ -19,7 +19,7 @@ const Experience = () => {
               <h4 className="display-3 text-info">Experience & Projects</h4>
             </div>
           </div>
-          <Fade left duration={2000}>
+          <Fade direction="left" duration={2000}>
             <Row className="grid row-grid items-stretch justify-items-stretch">
               {experience.map((data, i) => {
                 return <ExperienceCard key={i} {...data} />;

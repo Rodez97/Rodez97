@@ -10,6 +10,10 @@ import {
   SocialLinksType,
   GreetingsType,
 } from './types/sections';
+import fullStackAnimation from './lottie/skills/fullstack.json';
+import cloudAnimation from './lottie/skills/cloudinfra.json';
+import paymentsAnimation from './lottie/skills/payments.json';
+import websiteBuilderAnimation from './lottie/skills/website_builder.json';
 
 export const greetings: GreetingsType = {
   name: 'Rodez Digital',
@@ -40,7 +44,7 @@ export const skillsSection: SkillsSectionType = {
   data: [
     {
       title: 'Full Stack Development',
-      lottieAnimationFile: '/lottie/skills/fullstack.json', // Path of Lottie Animation JSON File
+      lottieAnimationFile: fullStackAnimation, // Path of Lottie Animation JSON File
       skills: [
         emoji(
           '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
@@ -98,7 +102,7 @@ export const skillsSection: SkillsSectionType = {
     },
     {
       title: 'Cloud Infra-Architecture',
-      lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
+      lottieAnimationFile: cloudAnimation, // Path of Lottie Animation JSON File
       skills: [
         emoji('⚡ Experience of working on multiple cloud platforms'),
         emoji(
@@ -154,7 +158,7 @@ export const skillsSection: SkillsSectionType = {
     },
     {
       title: 'Payment Integration',
-      lottieAnimationFile: '/lottie/skills/payments.json', // Path of Lottie Animation JSON File
+      lottieAnimationFile: paymentsAnimation, // Path of Lottie Animation JSON File
       skills: [
         emoji(
           '⚡ Experience of working with payment integration using Stripe & Paypal'
@@ -179,7 +183,7 @@ export const skillsSection: SkillsSectionType = {
     },
     {
       title: 'Website Builders',
-      lottieAnimationFile: '/lottie/skills/website_builder.json', // Path of Lottie Animation JSON File
+      lottieAnimationFile: websiteBuilderAnimation, // Path of Lottie Animation JSON File
       skills: [
         emoji(
           '⚡ Create websites using website builders like Webflow, Wordpress, Wix & Shopify'
@@ -320,7 +324,7 @@ export const seoData: SEODataType = {
   author: 'Danilo Rodríguez',
   image:
     'https://avatars.githubusercontent.com/u/35657153?s=400&u=399b0cc660bea7b63060efbd0df8a4fd9faba284&v=4',
-  url: 'https://developer-portfolio-1hanzla100.vercel.app',
+  url: 'https://rodez.digital',
   keywords: [
     'Danilo',
     'Danilo Rodríguez',

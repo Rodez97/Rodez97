@@ -1,15 +1,16 @@
 import React from 'react';
 import { SkillBars } from '../portfolio';
 import { Container, Row, Progress, Col } from 'reactstrap';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import GreetingLottie from '../components/DisplayLottie';
+import buildAnimation from '../lottie/build.json';
 
 const Proficiency = () => {
   return (
     SkillBars && (
       <section className="section bg-gradient-dark">
         <Container>
-          <Fade left duration={2000}>
+          <Fade direction="left" duration={2000}>
             <Row>
               <Col lg="6">
                 <h1 className="h1 text-white">Proficiency</h1>
@@ -36,7 +37,7 @@ const Proficiency = () => {
                 })}
               </Col>
               <Col lg="6">
-                <GreetingLottie animationPath="/lottie/build.json" />
+                <GreetingLottie animationData={buildAnimation} />
               </Col>
             </Row>
           </Fade>

@@ -31,7 +31,7 @@ type SoftwareSkillType = {
 
 type SkillType = {
   title: string;
-  lottieAnimationFile: string;
+  lottieAnimationFile: unknown;
   skills: React.ReactNode[] | string[];
   softwareSkills: SoftwareSkillType[];
 };

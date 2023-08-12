@@ -39,8 +39,6 @@ export const ContactUs = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log(form.current);
-
     const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 
     const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -129,6 +127,13 @@ export const ContactUs = () => {
                         type="textarea"
                       />
                     </FormGroup>
+
+                    <div className="d-flex justify-content-center pb-4">
+                      <div
+                        className="g-recaptcha"
+                        data-sitekey="6Lf-DZ0nAAAAAGNmVVWraSD9Rzz-cXqqApxdIoJ5"
+                      />
+                    </div>
                     <div>
                       <Button
                         block

@@ -30,6 +30,11 @@ function SEO() {
       <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+      <script
+        src="https://www.google.com/recaptcha/api.js"
+        async
+        defer
+      ></script>
     </Head>
   );
 }
