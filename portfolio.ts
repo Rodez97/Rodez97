@@ -12,14 +12,13 @@ import {
 } from './types/sections';
 import fullStackAnimation from './lottie/skills/fullstack.json';
 import cloudAnimation from './lottie/skills/cloudinfra.json';
-import paymentsAnimation from './lottie/skills/payments.json';
 import websiteBuilderAnimation from './lottie/skills/website_builder.json';
 
 export const greetings: GreetingsType = {
-  name: 'Rodez Digital',
-  title: "Hi all, I'm Rodez",
+  name: 'Danilo Rodriguez',
+  title: "Hi all, I'm Danilo",
   description:
-    "I'm a skilled Web Developer specializing in JavaScript, TypeScript, React, Node.js, Firebase, Stripe, and cloud platforms like Azure and AWS. With a knack for seamless UI/UX and mobile app development using React Native, I transform ideas into captivating digital solutions. Let's collaborate and bring your vision to life.",
+    "I'm a Frontend Web Developer specializing in React, JavaScript, TypeScript, Next.js, Firebase, Stripe, and cloud platforms like Azure and AWS. With a knack for seamless UI/UX and mobile app development using React Native, I transform ideas into captivating digital solutions. Let's collaborate and bring your vision to life.",
   resumeLink:
     'https://docs.google.com/document/d/1TV3Dum1GkbCoh3NXXBdcqWDPJPWyYjaVf8fnv3y0fdk/edit?usp=sharing',
 };
@@ -40,17 +39,19 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: 'What I do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  subTitle: 'CRAZY FRONTEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
   data: [
     {
-      title: 'Full Stack Development',
+      title: 'Frontend Development',
       lottieAnimationFile: fullStackAnimation, // Path of Lottie Animation JSON File
       skills: [
         emoji(
           '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
         ),
-        emoji('⚡ Building responsive static websites using Next.js'),
-        emoji('⚡ Creating application backend in Node & Express'),
+        emoji('⚡ Building responsive websites using Next.js'),
+        emoji(
+          '⚡ Creating application using React Js, Next Js, Redux, Tailwind CSS, Material UI, Styled Components'
+        ),
       ],
       softwareSkills: [
         {
@@ -76,10 +77,6 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: 'Nextjs',
           iconifyTag: 'vscode-icons:file-type-light-next',
-        },
-        {
-          skillName: 'NodeJs',
-          iconifyTag: 'logos:nodejs-icon',
         },
         {
           skillName: 'Tailwind CSS',
@@ -157,36 +154,11 @@ export const skillsSection: SkillsSectionType = {
       ],
     },
     {
-      title: 'Payment Integration',
-      lottieAnimationFile: paymentsAnimation, // Path of Lottie Animation JSON File
-      skills: [
-        emoji(
-          '⚡ Experience of working with payment integration using Stripe & Paypal'
-        ),
-        emoji(
-          '⚡ Use secure payment gateways to accept payments for easy transactions'
-        ),
-        emoji(
-          '⚡ Elevate your business by accepting payments from all over the world'
-        ),
-      ],
-      softwareSkills: [
-        {
-          skillName: 'Stripe',
-          iconifyTag: 'logos:stripe',
-        },
-        {
-          skillName: 'Paypal',
-          iconifyTag: 'logos:paypal',
-        },
-      ],
-    },
-    {
       title: 'Website Builders',
       lottieAnimationFile: websiteBuilderAnimation, // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          '⚡ Create websites using website builders like Webflow, Wordpress, Wix & Shopify'
+          '⚡ Create websites using website builders like Webflow & Wordpress'
         ),
         emoji(
           '⚡ Keep your website up-to-date with the latest trends and technologies'
@@ -202,14 +174,6 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Wordpress',
           iconifyTag: 'logos:wordpress-icon',
         },
-        {
-          skillName: 'Wix',
-          iconifyTag: 'logos:wix',
-        },
-        {
-          skillName: 'Shopify',
-          iconifyTag: 'logos:shopify',
-        },
       ],
     },
   ],
@@ -217,15 +181,19 @@ export const skillsSection: SkillsSectionType = {
 
 export const SkillBars: SkillBarsType[] = [
   {
-    Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-    progressPercentage: '80', //Insert relative proficiency in percentage
+    Stack: 'ReactJS', //Insert stack or technology you have experience in
+    progressPercentage: '100', //Insert relative proficiency in percentage
   },
   {
-    Stack: 'Backend',
+    Stack: 'NextJS',
     progressPercentage: '90',
   },
   {
-    Stack: 'Programming',
+    Stack: 'Javascript',
+    progressPercentage: '90',
+  },
+  {
+    Stack: 'Typescript',
     progressPercentage: '90',
   },
 ];
@@ -279,25 +247,27 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: 'developer-portfolio',
-    desc: 'Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.',
-    github: 'https://github.com/1hanzla100/developer-portfolio',
-    link: 'https://developer-portfolio-1hanzla100.vercel.app/',
+    name: 'Monetize Your Guild',
+    desc: 'Turn your Discord server into a revenue stream with this innovative application. Developed with Next.js, TypeScript, and React, the platform uses the Discord API and Stripe SDK to facilitate secure server monetization. It provides owners with an intuitive control panel to manage payments and customize options, delivering a hassle-free experience to transform communities into financial opportunities.',
+    github: 'https://github.com/Rodez97/discord-stripe-full',
+    link: 'https://monetizeyourguild.pro/',
   },
   {
-    name: 'AtlasMart',
-    desc: 'With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.',
-    github: 'https://github.com/1hanzla100/Django-React-Marketplace',
+    name: 'Schedulify',
+    desc: 'A project solely crafted by me, I harnessed the capabilities of Next.js, Gatsby.js, React, Firebase, SendinBlue, TypeScript, and Node.js. Schedulify introduces a no-cost staff scheduling solution, streamlining the complexities of generating and overseeing employee schedules. Its intuitive interface, vital functionalities, and adaptability cater to diverse scheduling requirements of businesses.',
+    github: 'https://github.com/Rodez97/Schedulify',
+    link: 'https://schedulify.pro/',
   },
   {
-    name: 'Technota (Forum)',
-    desc: 'Get hands-on experience in technical skills with Technota',
-    github: 'https://github.com/1hanzla100/django-react-forum',
+    name: 'Cuttinboard',
+    desc: 'A collaborative effort with a friend, I led the entire development process. Employing technologies like React, Expo React Native, Webflow, Stripe, SendinBlue API, Firebase, OneSignal, TypeScript, and Redux, we created Cuttinboard. This platform revolutionizes restaurant management, offering a comprehensive solution to address the unique challenges of the hospitality industry. From scheduling and messaging to employee management, inventory tracking, and more, Cuttinboard optimizes operations and enhances overall efficiency for restaurant owners, managers, and staff.',
+    github: 'https://github.com/Rodez97/Cuttinboard-Web',
+    link: 'https://cuttinboard.webflow.io/',
   },
   {
-    name: 'Shopaza (Ecommerce)',
-    desc: 'Now your reach to all your favorite entertainment and luxury items is just one touch apart',
-    github: 'https://github.com/1hanzla100/Django-ecommerce',
+    name: 'Cyberlight Website',
+    desc: 'This website was developed using pure HTML, CSS, and JavaScript. This project was a great opportunity to hone my skills and learn new techniques.',
+    github: 'https://github.com/Rodez97/PaginaWEB',
   },
 ];
 
@@ -319,8 +289,8 @@ export const showContactUs: boolean = true;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Danilo Rodríguez | Full Stack Developer',
-  description: 'A passionate Full Stack Web Developer',
+  title: 'Danilo Rodríguez | Frontend Developer',
+  description: 'A passionate Frontend Web Developer',
   author: 'Danilo Rodríguez',
   image:
     'https://avatars.githubusercontent.com/u/35657153?s=400&u=399b0cc660bea7b63060efbd0df8a4fd9faba284&v=4',

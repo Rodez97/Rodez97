@@ -2,8 +2,25 @@ import React from 'react';
 import { Card, Col, Row, Container } from 'reactstrap';
 import { GithubUserType } from '../types';
 import SocialLinks from './SocialLinks';
+import { openSource } from '../portfolio';
 
-const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
+const GithubProfileCard = () => {
+  const [user, setUser] = React.useState<GithubUserType>();
+
+  React.useEffect(() => {
+    fetch(`https://api.github.com/users/${openSource.githubUserName}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setUser(data);
+      });
+  }, []);
+
+  if (!user) {
+    return null;
+  }
+
+  const { avatar_url, bio, location } = user;
+
   return (
     <Card className="section-lg bg-gradient-dark shadow-lg border-0">
       <Container>
